@@ -1,21 +1,19 @@
 import logo from './logo.svg';
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
 import Container from './components/Container';
 import styled from 'styled-components';
 
-
 const StyledApp = styled.div`
-text-align: center;
-overflow:hidden;
-`
+  text-align: center;
+  overflow: hidden;
+`;
 
-const  App = ()=> {
+const App = () => {
   return (
     <StyledApp>
-     <Container/>
+      <Container />
     </StyledApp>
   );
-}
-
+};
 
 export default App;
