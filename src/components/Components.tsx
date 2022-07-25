@@ -103,7 +103,6 @@ margin-top: 4rem;
 padding:.8rem 0;
 z-index;1;
 background-color: white;
-
 `;
 
 export const StyledLi = styled.li`

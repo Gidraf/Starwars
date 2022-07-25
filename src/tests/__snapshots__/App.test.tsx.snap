@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It Renders Successfully Shows "Hello world!" 1`] = `
+<div
+  className="sc-hAZoDl fyWgUn"
+>
+  <div
+    className="sc-ftvSup FQGCe"
+  >
+    <img
+      className="sc-kDDrLX bFihDq"
+      src="starwars.jpeg"
+    />
+    <div
+      className="sc-iqcoie gefhIs"
+    >
+      <h2
+        className="sc-jqUVSM cxRjQe"
+      >
+        StarWars Films Search
+      </h2>
+      <input
+        className="sc-papXJ kaRkdn"
+        onChange={[Function]}
+        placeholder="Search for a Film  🔍"
+        value=""
+      />
+      <button
+        className="sc-breuTD jjQvlr"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Testing It renders Successfully" 1`] = `
+<div
+  className="sc-hAZoDl fyWgUn"
+>
+  <div
+    className="sc-ftvSup FQGCe"
+  >
+    <img
+      className="sc-kDDrLX bFihDq"
+      src="starwars.jpeg"
+    />
+    <div
+      className="sc-iqcoie gefhIs"
+    >
+      <h2
+        className="sc-jqUVSM cxRjQe"
+      >
+        StarWars Films Search
+      </h2>
+      <input
+        className="sc-papXJ kaRkdn"
+        onChange={[Function]}
+        placeholder="Search for a Film  🔍"
+        value=""
+      />
+      <button
+        className="sc-breuTD jjQvlr"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`t Matches Snapshots Shows "Hello world!" 1`] = `
+<div
+  className="sc-hAZoDl fyWgUn"
+>
+  <div
+    className="sc-ftvSup FQGCe"
+  >
+    <img
+      className="sc-kDDrLX bFihDq"
+      src="starwars.jpeg"
+    />
+    <div
+      className="sc-iqcoie gefhIs"
+    >
+      <h2
+        className="sc-jqUVSM cxRjQe"
+      >
+        StarWars Films Search
+      </h2>
+      <input
+        className="sc-papXJ kaRkdn"
+        onChange={[Function]}
+        placeholder="Search for a Film  🔍"
+        value=""
+      />
+      <button
+        className="sc-breuTD jjQvlr"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;
