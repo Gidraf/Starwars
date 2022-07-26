@@ -4,6 +4,12 @@ import { RootState, store } from '../reducers';
 import { searchReducer } from '../reducers/AllReducer';
 import Constants from '../utils/Constants';
 
+/**
+ * Query Films from API
+ * @param query
+ * @param toggleLoading
+ * @returns
+ */
 const searchFilm = (query: string, toggleLoading: any) => (dispatch: any) => {
   toggleLoading();
   fetch(`https://swapi.dev/api/films/?search=${query}`)
@@ -21,6 +27,13 @@ const searchFilm = (query: string, toggleLoading: any) => (dispatch: any) => {
     });
 };
 
+/**
+ * Get a film details
+ * @param id
+ * @param toggleLoading
+ * @param handleSucess
+ * @returns
+ */
 export const viewFilmDetails =
   (id: any, toggleLoading: any, handleSucess: any) => (dispatch: any) => {
     toggleLoading();

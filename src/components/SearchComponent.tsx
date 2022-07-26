@@ -42,7 +42,7 @@ const SearchComponent = () => {
         placeholder="Search for a Film  🔍"
       />
       <SubmitButton>Search</SubmitButton>
-      {films.length > 0 && value && (
+      {films && films.length > 0 && (
         <StyledSuggesstionDiv>
           {films.map((f: any, i: number) => {
             const ids = f.url.split('/');

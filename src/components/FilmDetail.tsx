@@ -22,7 +22,6 @@ const FilmDetails = () => {
   const animations = useAppSelector((state: any) => state.animations);
   const handleSuccess = (data: any) => {
     setFilmData(data);
-    console.log(data);
   };
 
   const toggleLoading = () => {
