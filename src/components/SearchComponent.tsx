@@ -29,9 +29,9 @@ const SearchComponent = () => {
     setIsLoading(!isLoading);
   };
 
-  const searchForAFilm = (e: any) => {
+  const searchForAFilm = async (e: any) => {
     setValue(e.target.value);
-    dispatch(searchFilm(e.target.value, toggleIsLoading));
+    await dispatch(searchFilm(e.target.value, toggleIsLoading));
   };
   return (
     <StyledDiv>

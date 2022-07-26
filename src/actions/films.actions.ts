@@ -10,22 +10,23 @@ import Constants from '../utils/Constants';
  * @param toggleLoading
  * @returns
  */
-const searchFilm = (query: string, toggleLoading: any) => (dispatch: any) => {
-  toggleLoading();
-  fetch(`https://swapi.dev/api/films/?search=${query}`)
-    .then((response) => {
-      toggleLoading();
-      if (response.status === 200) {
-        response.json().then((data) => {
-          store.dispatch(searchReducer(data.results));
-        });
-      }
-      return;
-    })
-    .catch(() => {
-      toggleLoading();
-    });
-};
+const searchFilm =
+  (query: string, toggleLoading: any) => async (dispatch: any) => {
+    toggleLoading();
+    fetch(`https://swapi.dev/api/films/?search=${query}`)
+      .then((response) => {
+        toggleLoading();
+        if (response.status === 200) {
+          response.json().then((data) => {
+            store.dispatch(searchReducer(data.results));
+          });
+        }
+        return;
+      })
+      .catch(() => {
+        toggleLoading();
+      });
+  };
 
 /**
  * Get a film details
@@ -35,7 +36,7 @@ const searchFilm = (query: string, toggleLoading: any) => (dispatch: any) => {
  * @returns
  */
 export const viewFilmDetails =
-  (id: any, toggleLoading: any, handleSucess: any) => (dispatch: any) => {
+  (id: any, toggleLoading: any, handleSucess: any) => async (dispatch: any) => {
     toggleLoading();
     fetch(`https://swapi.dev/api/films/${id}/`)
       .then((response) => {
